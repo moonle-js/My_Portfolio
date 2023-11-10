@@ -1,0 +1,76 @@
+section.container{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+    section.container .cards{
+        width: 68%;
+        height: 100%;
+        background-color: #fff;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+        section.container .cards p{
+            font-size: 25px;
+            color: #4aaaa5;
+            width: 100%;
+            height: 10%;
+        }
+        section.container .cards p::after{
+            display: block;
+            content: "";
+            margin-top: 20px;
+            width: 100%;
+            height: 2px;
+            background-color: #ccc;
+        }
+
+        /* Styling form */
+
+        section.container .cards form{
+            display: flex;
+            padding-top: 20px;
+            width: 100%;
+            height: 400px;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: left;
+        }
+            section.container .cards form label{
+                font-size: 20px;
+                color: grey;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                height: 10%;
+                width: 50%;
+            }
+            section.container .cards form input[type="email"],
+            section.container .cards form input[type="text"]{
+                width: 90%;
+                height: 10%;
+                padding: 0;
+                border: 1px solid lightgray;
+                padding-left: 5px;
+            }
+            section.container .cards form input[type="textarea"]{
+                height: 30%;
+                width: 90%;
+                border: 1px solid lightgray;
+                padding-left: 5px;
+            }
+            section.container .cards form button{
+                height: 10%;
+                width: 30%;
+                background: #4aaaa5;
+                border: none;
+                color: #fff;
+            }
