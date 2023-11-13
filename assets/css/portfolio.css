@@ -79,3 +79,20 @@
                     background-size: cover;
                 }
             /* Section right-side done, start for contact links */
+
+            /* Adding styles for footer because in standart it seems so bad 
+            When we set position absolute to footer it fixes in middle of page when the size of screen is incorrect*/
+
+            @media only screen and (max-height: 1300px) {
+                footer{
+                    position: inherit;
+                }
+            }
+            @media only screen and (min-height: 1300px) {
+                footer{
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+
+        
