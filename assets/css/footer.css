@@ -19,3 +19,15 @@
                         color: #fff;
                         font-style: italic;
                     }
+
+                    @media only screen and (max-height: 950px) {
+                        footer{
+                            position: inherit;
+                        }
+                    }
+                    @media only screen and (min-height: 950px) {
+                        footer{
+                            position: absolute;
+                            bottom: 0;
+                        }
+                    }
